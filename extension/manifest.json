@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "New Tab Search",
+  "description": "Search Engine In New Tab",
+  "author": "Nguyen Pham",
+  "version": "1.0",
+  "chrome_url_overrides": {
+    "newtab": "data/200.html"
+  },
+  "icons": {
+    "16": "data/images/icon16.png",
+    "32": "data/images/icon32.png",
+    "48": "data/images/icon48.png",
+    "64": "data/images/icon64.png",
+    "128": "data/images/icon128.png"
+  },
+  "browser_action": {
+    "default_icon": "data/images/icon32.png",
+    "javascript": "data/action.js"
+  },
+  "content_security_policy": "script-src 'self' https://apis.google.com; object-src 'self'"
+}
